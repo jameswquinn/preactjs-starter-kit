@@ -59,7 +59,8 @@ module.exports = {
                 [
                   "transform-react-jsx",
                   {
-                    pragma: "h"
+                    pragma: "h",
+                    pragmaFrag: "Fragment"
                   }
                 ]
               ]
