@@ -28,7 +28,13 @@ export default class About extends Component {
     
     return (
       <Fragment>
-        <Helmet title="My My My Title Hay James Yet Another Page" />
+        <Helmet 
+        title="about page" 
+          meta={[
+            { name: "description", content: "Helmet application ~ about page" },
+            { property: "og:type", content: "article" }
+          ]}
+        />
         <article>
             <h1>About Page</h1>
         </article>

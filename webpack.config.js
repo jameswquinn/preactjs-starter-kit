@@ -180,9 +180,9 @@ module.exports = {
     }),
     new WebpackPwaManifest({
       //filename: "manifest.json",
-      name: "My Progressive Web App",
-      short_name: "MyPWA",
-      description: "My awesome Progressive Web App!",
+      name: "preactjs starter kit",
+      short_name: "PSK",
+      description: "preact js progressive web app starter kit",
       background_color: "#000000",
       theme_color: "#000000",
       orientation: "portrait",

@@ -1,4 +1,4 @@
-import { h, Component } from "preact";
+import { h, Component, Fragment, render } from "preact";
 import Helmet from "preact-helmet";
 
 import * as timeago from "timeago.js";
@@ -55,7 +55,14 @@ export default class Home extends Component {
 
   render() {
     return (
-      <main>
+      <Fragment>
+        <Helmet 
+        title="preactjs starter kit" 
+          meta={[
+            { name: "description", content: "Helmet application" },
+            { property: "og:type", content: "article" }
+          ]}
+        />
         <svg style="position: absolute; width: 0; height: 0;" xmlns='http://www.w3.org/2000/svg'
           overflow='hidden'>
           <defs>
@@ -182,7 +189,6 @@ export default class Home extends Component {
             </symbol>
           </defs>
           </svg>
-        <Helmet title="My Title Hay James" />
         <header class="video-header">
           <video id="intro" src={require("../../video/intro2.mp4")} autoplay loop playsinline muted poster="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs="></video>
           <div class="viewport-header viewport-header__transform">
@@ -216,7 +222,7 @@ export default class Home extends Component {
           <svg class="icon"><use xlinkhref="#icon-Schedule"></use></svg>
           <svg width="100" height="100"><use xlinkhref="#icon-Branding__Logo"></use></svg> 
         </article>
-      </main>
+      </Fragment>
     );
   }
 }
