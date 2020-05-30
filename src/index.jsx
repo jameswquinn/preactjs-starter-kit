@@ -4,7 +4,7 @@ import { h, Component, Fragment, render } from "preact";
 import { Router } from "preact-router";
 import { Link } from 'preact-router/match';
 import AsyncRoute from 'preact-async-route';
-
+import * as timeago from "timeago.js";
 import "./index.css";
 
 import Home from "./Components/Home/Home";

@@ -222,6 +222,7 @@ export default class Home extends Component {
           <svg class="icon"><use xlinkhref="#icon-Schedule"></use></svg>
           <svg width="100" height="100"><use xlinkhref="#icon-Branding__Logo"></use></svg> 
         </article>
+        <h2>{timeago.format(1590876022937)}</h2>
       </Fragment>
     );
   }
