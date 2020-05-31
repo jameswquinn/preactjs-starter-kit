@@ -100,11 +100,6 @@ a.active {
   fill: inherit;
 }
 
-.phone__logo  {
-  margin-top: .75em;
-  height: 2.25em;
-  fill: currentColor;
-}
 
 .navigation {
   z-index: var(--navigation-height__z-index);
@@ -120,32 +115,6 @@ a.active {
   transition: transform calc(var(--animation-duration) * 2);
 }
 
-#masthead {
-  z-index: var(--top__level-logo__z-index);
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: fixed;
-  top: 0;
-  will-change: transform;
-  transition: transform calc(var(--animation-duration) * 2);
-}
-
-#masthead.isvisible {
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
-
-#branding__logo {
-  height: 3em;
-  fill: currentColor;
-}
-
-.branding__logo-alt path {
-  transform: matrix(1, 0, 0, 1, 0, 0);
-}
 
 main {
   -webkit-animation: fade-in calc(var(--animation-duration) * 5)
