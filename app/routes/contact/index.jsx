@@ -9,20 +9,21 @@ import AsyncRoute from 'preact-async-route';
 import Helmet from "preact-helmet";
 import * as timeago from "timeago.js";
 
-const Home = () => {
+
+const Contact = () => {
     return (
         <Fragment>
             <Helmet
-                title="home page"
+                title="contact page"
                 meta={[
                     { name: "description", content: "Helmet application ~ about page" },
                     { property: "og:type", content: "article" }
                 ]}
             />
-            <h1>Home</h1>
-            <p>This is the Home component.</p>
+            <h1>Contact</h1>
+            <p>This is the Contact component.</p>
         </Fragment>
     )
 }
 
-export default Home;
+export default Contact;

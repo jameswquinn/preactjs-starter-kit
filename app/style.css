@@ -89,7 +89,7 @@ a {
 }
 
 a.active {
-  fill: red;
+  fill:gold;
 }
 
 .navigation svg {
