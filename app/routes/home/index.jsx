@@ -20,6 +20,7 @@ const Home = () => {
                 ]}
             />
             <h1>Home</h1>
+            <h2>time ago {timeago.format(1567953513078)}</h2>
             <p>This is the Home component.</p>
         </Fragment>
     )

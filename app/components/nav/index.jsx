@@ -12,6 +12,7 @@ import * as timeago from "timeago.js";
 const Nav = () => {
     return (
         <Fragment>
+            {/* A JSX comment */}
             <svg
                 aria-hidden="true"
                 style="position: absolute; width: 0; height: 0; overflow: hidden;"
