@@ -1,6 +1,6 @@
 /** @jsx h */
 
-import { h, Component, Fragment, render } from "preact";
+import { h, Component, Fragment, cloneElement, render } from "preact";
 import { useState, useReducer, useMemo, useCallback, useRef, useContext, useEffect, useLayoutEffect, useErrorBoundary } from 'preact/hooks';
 import { Router } from "preact-router";
 import Match from 'preact-router/match';
