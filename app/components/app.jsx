@@ -10,8 +10,7 @@ import AsyncRoute from 'preact-async-route';
 import Helmet from "preact-helmet";
 import * as timeago from "timeago.js";
 
-import Home from '../routes/home/index';
-
+import Error from '../routes/404/index';
 import Nav from './nav/index'
 
 const App = () => {
@@ -20,7 +19,12 @@ const App = () => {
         <Fragment id="root">
             <Nav />
             <Router>
-                <Home path="/" />
+                <AsyncRoute
+                    path="/"
+                    getComponent={() =>
+                        import('../routes/home/index').then(module => module.default)
+                    }
+                />
                 <AsyncRoute
                     path="/about"
                     getComponent={() =>
@@ -44,18 +48,5 @@ const App = () => {
         </Fragment>
     )
 }
-
-
-
-/** fall-back route (handles unroutable URLs) */
-const Error = ({ type, url }) => (
-    <main className="error">
-        <h2>Error {type}</h2>
-        <p>It looks like we hit a snag.</p>
-        <pre>{url}</pre>
-    </main>
-);
-
-
 
 render(<App />, document.body, document.body.querySelector("#root"));

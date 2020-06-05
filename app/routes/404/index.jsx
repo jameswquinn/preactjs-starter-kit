@@ -1,4 +1,3 @@
-
 /** @jsx h */
 
 import { h, Component, Fragment, cloneElement, render } from "preact";
@@ -10,20 +9,20 @@ import AsyncRoute from 'preact-async-route';
 import Helmet from "preact-helmet";
 import * as timeago from "timeago.js";
 
-const Home = () => {
+const Error = () => {
     return (
         <Fragment>
             <Helmet
-                title="home page"
+                title="error page"
                 meta={[
                     { name: "description", content: "Helmet application ~ about page" },
                     { property: "og:type", content: "article" }
                 ]}
             />
-            <h1>Home</h1>
-            <p>This is the Home component.</p>
+            <h1>Error</h1>
+            <p>This is the Error component.</p>
         </Fragment>
     )
 }
 
-export default Home;
+export default Error;
