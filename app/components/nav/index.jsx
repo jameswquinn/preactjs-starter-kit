@@ -10,8 +10,15 @@ import Helmet from "preact-helmet";
 import * as timeago from "timeago.js";
 
 const Nav = () => {
+
     return (
         <Fragment>
+            <style>
+                {'.primary_navigation svg {display: block;width: 2.25rem;height: 2.25rem;background-color: transparent;fill: inherit;}'}
+                {'.primary_navigation {z-index: var(--primary_navigation-height__z-index);display: flex;justify-content: space-evenly;align-items: center;width: 100vw;height: var(--navigation-height);background-color: rgb(0, 0, 0);position: fixed;bottom: 0;will-change: transform;transition: transform calc(var(--animation-duration) * 2);}'}
+                {'a {fill: currentColor;color: white;text-decoration: none;text-transform: uppercase;}'}
+                {'a.active {fill:red;}'}
+            </style>
             {/* A JSX comment */}
             <svg
                 aria-hidden="true"
@@ -28,7 +35,7 @@ const Nav = () => {
                 </defs>
             </svg>
 
-            <nav className="navigation" role="navigation">
+            <nav className="primary_navigation" role="navigation">
                 <Link activeClassName="active" href="/" aria-label="link home">
                     <svg>
                         <use xlinkHref="#icon-home" />
