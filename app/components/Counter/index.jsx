@@ -1,6 +1,5 @@
 import { h, Component, Fragment, cloneElement, render } from "preact";
 import { Connect } from 'redux-zero/preact';
-//import actions from '../actions/actions';
 import actions from '../../actions/actions'
 
 const mapToProps = ({ count }) => ({ count });
