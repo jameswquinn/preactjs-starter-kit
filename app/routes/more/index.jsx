@@ -7,7 +7,11 @@ import Match from 'preact-router/match';
 import { Link } from 'preact-router/match';
 import AsyncRoute from 'preact-async-route';
 import Helmet from "preact-helmet";
+import { Provider } from 'redux-zero/preact';
 import * as timeago from "timeago.js";
+
+import store from '../../stores/store';
+import Counter from '../../components/Counter/index';
 
 const More = () => {
     return (
@@ -19,8 +23,13 @@ const More = () => {
                     { property: "og:type", content: "article" }
                 ]}
             />
-            <h1>More</h1>
-            <p>This is the More component.</p>
+            <main>
+                <h1>More</h1>
+                <p>This is the More component.</p>
+                <Provider store={store}>
+                    <Counter />
+                </Provider>
+            </main>
         </Fragment>
     )
 }

@@ -8,7 +8,11 @@ import Match from 'preact-router/match';
 import { Link } from 'preact-router/match';
 import AsyncRoute from 'preact-async-route';
 import Helmet from "preact-helmet";
+import { Provider } from 'redux-zero/preact';
 import * as timeago from "timeago.js";
+
+import store from '../../stores/store';
+import Counter from '../../components/Counter/index';
 
 const Home = () => {
     return (
@@ -22,6 +26,9 @@ const Home = () => {
             />
             <h1>Home</h1>
             <p>This is the Home component.</p>
+            <Provider store={store}>
+                <Counter />
+            </Provider>
         </Fragment>
     )
 }

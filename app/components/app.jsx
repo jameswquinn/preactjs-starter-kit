@@ -1,4 +1,3 @@
-
 /** @jsx h */
 
 import { h, Component, Fragment, cloneElement, render } from "preact";
@@ -8,6 +7,7 @@ import Match from 'preact-router/match';
 import { Link } from 'preact-router/match';
 import AsyncRoute from 'preact-async-route';
 import Helmet from "preact-helmet";
+//import { Transition, CSSTransition, TransitionGroup } from 'preact-transitioning';
 import * as timeago from "timeago.js";
 
 import Error from '../routes/404/index';
@@ -44,7 +44,7 @@ const App = () => {
                     }
                 />
                 <Error type="404" default />
-            </Router>
+                </Router>
         </Fragment>
     )
 }
