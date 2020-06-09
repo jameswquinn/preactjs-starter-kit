@@ -1,8 +1,10 @@
-    <style>
-        {':root {--primary-navigation_bg-color: #fff;}'}
-        {'svg {fill-opacity: 0;transition-property: fill-opacity;transition-duration: 300ms;}'}
-        {'svg:hover {fill-opacity: 1;}'}
-    </style>
+        <style>
+            :root {--primary-navigation_bg-color: #fff;}
+            svg {fill-opacity: 0;transition-property: fill-opacity;transition-duration: 300ms;}
+            svg:hover {fill-opacity: 1;}
+        </style>
+
+
         <svg
             aria-hidden="true"
             style="position: absolute; width: 0; height: 0; overflow: hidden;"
